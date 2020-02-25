@@ -1,0 +1,23 @@
+.Eightball {
+    margin-left: 100px;
+    width: 200px;  
+}
+
+.Eightball-message {
+    width: 200px;
+    height:200px;
+    font-family: Arial;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+}
+
+.Eightball-button {
+    font-family: Arial;
+    font-size: 14px;
+    margin-left: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
