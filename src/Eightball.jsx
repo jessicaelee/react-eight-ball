@@ -26,15 +26,20 @@ function Eightball(props) {
     function reset() {
         setColor("black");
         setMsg('Think of a question');
+        setColorCount({
+            red: 0,
+            goldenrod: 0,
+            green: 0
+        });
     }
 
     let background = { backgroundColor: color, color: "white" }
     return (
         <div className="Eightball">
-            <span>
+            <span onClick={handleClick}>
                 <p className="Eightball-message" style={background}>{msg}</p>
             </span>
-            <button className="Eightball-button" onClick={handleClick}>Reveal</button>
+
             <button className="Eightball-button" onClick={reset}>Reset</button> <br></br>
 
             <span>Red: {colorCount.red} </span>
